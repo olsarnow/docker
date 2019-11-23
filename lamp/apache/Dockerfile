@@ -18,7 +18,7 @@ ENV APACHE_PID_FILE /var/run/apache2.pid
 
 EXPOSE 80
 
-ADD www /var/www/site
+ADD ./www /var/www/site
 
 ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
 
