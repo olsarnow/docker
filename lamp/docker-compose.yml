@@ -24,6 +24,10 @@ services:
       - backend
     environment:
       - MYSQL_ROOT_PASSWORD=rootpassword
+	  - MYSQL_USER=mysql
+	  - MYSQL_DATA_DIR=/var/lib/mysql
+	  - MYSQL_RUN_DIR=/run/mysqld
+	  - MYSQL_LOG_DIR=/var/log/mysql
 networks:
   frontend:
   backend:
