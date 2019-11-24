@@ -31,6 +31,8 @@ services:
       - DB_NAME=testdb
       - DB_USER=user
       - DB_PASS=pass
+      - MYSQL_CHARSET=utf8
+      - MYSQL_COLLATION=utf8_unicode_ci
 networks:
   frontend:
   backend:
