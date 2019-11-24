@@ -28,6 +28,9 @@ services:
       - MYSQL_DATA_DIR=/var/lib/mysql
       - MYSQL_RUN_DIR=/run/mysqld
       - MYSQL_LOG_DIR=/var/log/mysql
+      - DB_NAME=testdb
+      - DB_USER=user
+      - DB_PASS=pass
 networks:
   frontend:
   backend:

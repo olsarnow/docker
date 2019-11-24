@@ -3,9 +3,6 @@ set -e
 
 [[ $DEBUG == true ]] && set -x
 
-DB_NAME=${DB_NAME:-"testdb"}
-DB_USER=${DB_USER:-"user"}
-DB_PASS=${DB_PASS:-"pass"}
 
 DB_REMOTE_ROOT_NAME=${DB_REMOTE_ROOT_NAME:-"user"}
 DB_REMOTE_ROOT_PASS=${DB_REMOTE_ROOT_PASS:-"pass"}
